@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body {
+    background-color: #faf0e6;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    background: url(../images/main.jpg) center no-repeat scroll;
+    background-size: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(111, 78, 55, 0.3);
+}
+
+.ocons-main {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: clamp(2rem, 4vh, 10rem);
+    position: fixed;
+    z-index: 1;
+}
+
+.section2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.itemsec2 {
+    background: url(../images/carlo.jpg) center scroll;
+    background-size: cover;
+}
+
+.itemsec2:hover,
+.item2sec2:hover,
+.item3sec2:hover {
+    border-radius: 100px 20px;
+}
+
+.item-sec2 {
+    border-radius: 20px 100px;
+}
+
+.item2sec2 {
+    background: url(../images/carlo1.jpg) center scroll;
+    background-size: cover;
+}
+
+.item3sec2 {
+    background: url(../images/carlo2.jpg) center scroll;
+    background-size: cover;
+}
+
+.overlay-sec2 {
+    border-radius: 20px 100px;
+    transition: 2s;
+}
+
+.item-sec2 {
+    transition: 2s;
+}
+
+.overlay-sec2:hover {
+    border-radius: 100px 20px;
+}
+
+.parent2-sec2 {
+    height: 70vh;
+    text-align: center;
+    align-content: center;
+}
+
+.parent-sec3 {
+    background: url(../images/coffee.jpg) center fixed;
+    background-size: cover;
+    align-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.accordion,
+.accordion .accordion-item {
+    background-color: transparent;
+}
+
+.accordion-item {
+    border: 1px solid white;
+}
+
+.accordion .accordion-header .accordion-button {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion .accordion-body {
+    background-color: transparent;
+}
+
+.overlay-sec3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(111, 78, 55, 0.4);
+    align-content: center;
+}
+
+.parent-sec2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-sec2 {
+    width: 28%;
+    height: 70vh;
+}
+
+.section-4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.content-sec4 {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    align-content: center;
+}
+
+.parent-sec4 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-sec4 {
+    width: 30%;
+    height: 65vh;
+    border-radius: 30px;
+    text-align: center;
+    transition: 2s;
+}
+
+.item-sec4:hover .overlay-sec4 {
+    background-color: rgba(111, 78, 55, 0.6);
+}
+
+.item1-sec4 {
+    background: url(../images/Head\ Roaster\ &\ Founder.jpg) center scroll;
+    background-size: cover;
+}
+
+.item2-sec4 {
+    background: url(../images/Lead\ Barista.jpg) center scroll;
+    background-size: cover;
+}
+
+.item3-sec4 {
+    background: url(../images/Operations\ Manager.jpg) center scroll;
+    background-size: cover;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.overlay-sec4 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(111, 78, 55, 0.4);
+    border-radius: 30px;
+    align-content: center;
+    transition: 2s;
+}
+
+.for-border {
+    border-right: 1px solid rgb(111, 78, 55);
+    background-color: rgba(111, 78, 55, 0.5);
+    width: 100%;
+    border-radius: 0 0 0 150px;
+}
+
+.img-sec5 {
+    width: 400px;
+    height: 45vh;
+    border-radius: 0 0 0 150px;
+}
+
+.parent-sec6 {
+    width: 100%;
+    height: 20vh;
+}
+
+.item-sec6 {
+    width: 22%;
+    height: 15vh;
+}
+
+.container-sec5 {
+    width: 90%;
+    margin: auto;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .parent-sec4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .item-sec4 {
+        width: 95%;
+        height: 100%;
+    }
+
+    .section5 {
+        margin-top: 50vh;
+    }
+
+    .img-sec5 {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .for-border {
+        border-radius: 0;
+    }
+
+    .p-none {
+        display: none;
+    }
+
+    .section6 {
+        margin-top: 95vh;
+    }
+
+    .container-sec5,
+    .container-sec6 {
+        width: 96%;
+        margin: auto;
+    }
+
+    .parent-sec6 {
+        height: 40vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .item-sec6 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section6 {
+        position: relative;
+        top: 90vh;
+    }
+
+    footer {
+        margin-top: 120vh;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .section2 {
+        width: 100%;
+        height: 130dvh;
+    }
+
+    .parent-sec2 {
+        width: 100%;
+        height: 120dvh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .item-sec2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section3 {
+        margin-top: 100dvh;
+        align-content: center;
+    }
+
+    .parent-sec4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .item-sec4 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-sec5 {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .for-border {
+        border-radius: 0 0 0 50px;
+    }
+
+    .section5 {
+        margin-top: 80vh;
+    }
+
+    .p-none {
+        display: none;
+    }
+
+    .section6 {
+        margin-top: 70vh;
+    }
+
+    .parent-sec6 {
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .item-sec6 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section6 {
+        position: relative;
+        top: 70vh;
+    }
+
+    footer {
+        margin-top: 110vh;
+    }
+}
